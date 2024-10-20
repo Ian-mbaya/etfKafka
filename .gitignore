@@ -1,0 +1,9 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+# SBT
+target/
+lib/
+project/target/
+project/project/
+*.log
