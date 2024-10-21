@@ -21,7 +21,8 @@ object Main {
     val csvData = Source.fromFile(filePath).getLines()
 
     // Simulate real-time data by sending each row to Kafka
-    csvData.drop(1).foreach { line => // Skip the header by using drop(1)
+    csvData.drop(1).foreach { line => // drop(1) skips the header
+
       // Split the CSV line by comma to extract the values
       val Array(stringValue, value1, value2) = line.split(",")
 
